@@ -87,18 +87,24 @@ header ul li a:hover,.active{
 .content p{
     margin:20px ;
 }
-@media(max-width:1000px){
-    header {margin-left: 20px;}
-    header.logo  {margin-right: 20px;}
-    header ul {margin-right: 10px;}
-    header ul li {margin-right: 28px;}
-    .main{ height:auto ;
-    padding: 4rem 2rem ;}
-    .main::after{ display: none;}
-    .main img{ position: relative; height: auto; }
-    .ABDELKARIM{ transform: translateY(0px); text-align: center; }
+.button{
+    padding:10px 20px ;
+    background: #fff;
+    color:#200016 ;
+    border:none ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-@media(max-width:600px){
-    header ul { flex-direction: column; }
-    header logo { margin-bottom: 10px; }
+.button:hover{
+    background: transparent;
+    color:#fff ;
+    border:2px solid #fff ;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #200016;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #200016, #cbb4d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #200016, #cbb4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
