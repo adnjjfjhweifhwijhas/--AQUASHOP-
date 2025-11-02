@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <style>
+       *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{ width: 100%; height: 300px; }
+header{
+    text-align: center;
+    position: fixed;
+    width:26% ;
+    z-index:100 ;
+    left:36% ;
+
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    overflow: hidden;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width:100%;
+    background: linear-gradient(to top, #000000, transparent);
+}
+.main img{
+    position: absolute;
+    width:100% ;
+    height:100vh ;
+    object-fit: cover;
+     image-orientation: 10px0deg;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #200016;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #200016, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #200016, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home-products-swiper{
+    padding: 80px 0;
+}
+.home-products-title{
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 80px;
+}
+.home-products-container{
+    width: 90%;
+    padding-left: 60px;
+}
+.home-product-box{
+    background: transparent;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+.home-product-img{
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.home-product-title{
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.home-product-price{
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.home-product-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.home-product-btn:hover{
+    background: #000000;
+}
+    </style>
+    
+</head>
+<body>
+   <section class="home-products-swiper">
+    <h2 class="home-products-title"> AQUASHOP </h2>
+    <div class="home-products-container swiper-container">
+        <div class="swiper-wrapper">
+            <div class="home-product-box swiper-slide">
+                <img src="lunette-de-natation-ready-taille-unique-verres-clairs-gris.jpg" alt="22" class="home-product-img">
+                <h3 class="home-product-title">NABAIJI<br>
+
+Lunettes De Natation - Ready - Taille Unique - Verres Clairs</h3>
+                <div class="home-product-price">20.00 DH</div>
+                <a href="#" class="home-product-btn">Ajouter au panier</a>
+            </div>
+            <div class="home-product-box swiper-slide">
+                <img src="gilet-de-natation-swimvest-rose-bleu.jpg" alt="" class="home-product-img">
+                <h3 class="home-product-title">NABAIJI <br>
+
+Gilet de natation swimvest+ vert bleu</h3>
+                <div class="home-product-price">35.00 DH</div>
+                <a href="#" class="home-product-btn">Ajouter au panier</a>
+            </div>
+            <div class="home-product-box swiper-slide">
+                <img src="palmes-natation-courtes-silifins-noir.jpg" alt="" class="home-product-img">
+                <h3 class="home-product-title">NABAIJI<br>
+
+Palmes de natation - Silifin bleu jaune</h3>
+                <div class="home-product-price">50.00 DH</div>
+                <a href="#" class="home-product-btn">Ajouter au panier</a>
+            </div>
+        </div>
+    </div>
+   </section>
+</body>
+</html>
